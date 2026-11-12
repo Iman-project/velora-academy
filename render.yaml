@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: velora-academy
+    env: static
+    staticPublishPath: ./
+    pullRequestPreviewsEnabled: true

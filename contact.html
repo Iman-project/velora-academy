@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velora Academy | Contact</title>
+    <meta
+      name="description"
+      content="Contact Velora Academy for admissions, enquiries, and premium learning programme information."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Velora Academy home page">
+          <span class="brand-mark">V</span>
+          <span>Velora Academy</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Programmes</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-banner contact-banner">
+        <div class="container">
+          <p class="eyebrow accent">Contact us</p>
+          <h1>We would love to welcome your child to Velora.</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-layout">
+          <div class="contact-card info-card">
+            <h2>Get in touch</h2>
+            <ul class="contact-list">
+              <li>
+                <strong>Email:</strong>
+                <a href="mailto:admissions@veloraacademy.ng">admissions@veloraacademy.ng</a>
+              </li>
+              <li>
+                <strong>Phone:</strong>
+                <a href="tel:+2348034567890">+234 803 456 7890</a>
+              </li>
+              <li>
+                <strong>Address:</strong>
+                Afe Babalola University, Ado-Ekiti, Ekiti State, Nigeria
+              </li>
+              <li>
+                <strong>Hours:</strong>
+                Mon - Fri: 8:00 AM - 4:00 PM
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-card form-card">
+            <h2>Send an enquiry</h2>
+            <form id="contactForm" novalidate>
+              <div class="field-group">
+                <label for="fullName">Full name</label>
+                <input id="fullName" name="fullName" type="text" />
+                <small class="error-message" aria-live="polite"></small>
+              </div>
+
+              <div class="field-group">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" />
+                <small class="error-message" aria-live="polite"></small>
+              </div>
+
+              <div class="field-group">
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" />
+                <small class="error-message" aria-live="polite"></small>
+              </div>
+
+              <div class="field-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+                <small class="error-message" aria-live="polite"></small>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <p id="formSuccess" class="form-success" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>&copy; <span id="year"></span> Velora Academy</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="services.html">Programmes</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
